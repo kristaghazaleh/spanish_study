@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A personal Spanish study reference for Latin American and Costa Rican Spanish: grammar, verbs, adjectives, vocabulary, slang, and practice." />
+  <meta name="keywords" content="Spanish, Latin American Spanish, Costa Rican Spanish, verbs, conjugations, vocabulary, adjectives, grammar, slang" />
+  <title>Spanish Study Reference — Latin American / Costa Rican Focus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <div class="course-line">Spanish Study Reference</div>
+      <h1 class="title">Latin American Spanish, organized for real studying.</h1>
+      <p class="hero-copy">A searchable one-page reference for grammar, verb conjugations, adjectives, adverbs, vocabulary, examples, Costa Rican speech notes, and advanced romantic readings with clickable word explanations.</p>
+      <div class="meta">
+        <div><span class="meta-label">Focus:</span> Latin American Spanish, with Costa Rican usted/vos notes</div>
+        <div><span class="meta-label">Use:</span> Search, click a category, expand a topic, and practice from examples</div>
+      </div>
+      <div class="hero-actions">
+        <a class="button primary" href="#verbs">Start with verbs</a>
+        <a class="button" href="#grammar">Open grammar</a>
+        <a class="button" href="#global-search">Search everything</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-inner">
+      <div class="toc-title">Jump</div>
+      <a href="#how-to-use">How to use</a>
+      <a href="#grammar">Grammar</a>
+      <a href="#tenses">Tenses</a>
+      <a href="#words">Words</a>
+      <a href="#verbs">Verbs</a>
+      <a href="#adjectives">Adjectives</a>
+      <a href="#adverbs">Adverbs</a>
+      <a href="#slang">Slang</a>
+      <a href="#readings">Readings</a>
+      <a href="#practice">Practice</a>
+    </div>
+  </nav>
+
+  <div class="jump-rail" aria-label="Section slider links">
+    <a href="#top">Top</a>
+    <a href="#global-search">Search</a>
+    <a href="#grammar">Grammar</a>
+    <a href="#verbs">Verb tables</a>
+    <a href="#words">Topic words</a>
+    <a href="#slang">Tico slang</a>
+    <a href="#readings">Readings</a>
+      <a href="#readings">Stories</a>
+    <a href="#practice">Practice</a>
+  </div>
+
+  <main class="page">
+    <section id="how-to-use" class="content intro-grid">
+      <div>
+        <h2>How this page is meant to work</h2>
+        <p>This is not trying to be a textbook. It is a working reference: search what you need, open the category, read the human explanation, then copy the example sentence pattern into your own Spanish.</p>
+        <p>For Costa Rican Spanish, the safest path is to get comfortable with <strong>usted</strong> and recognize <strong>vos</strong>. You will still see <strong>tú</strong> because music, Duolingo, shows, and other Latin American speakers use it, but this site does not treat Spain-style <em>vosotros</em> as a main target.</p>
+      </div>
+      <aside class="stat-panel" aria-label="Current dataset counts">
+        <div class="stat"><span id="count-verbs">0</span><small>verbs</small></div>
+        <div class="stat"><span id="count-adjectives">0</span><small>adjectives</small></div>
+        <div class="stat"><span id="count-vocab">0</span><small>vocab cards</small></div>
+        <div class="stat"><span id="count-slang">0</span><small>slang notes</small></div>
+      </aside>
+    </section>
+
+    <section id="global-search" class="content search-shell">
+      <h2>Search everything</h2>
+      <p>Type an English word, Spanish word, topic, or phrase. This searches verbs, vocabulary, adjectives, adverbs, and slang.</p>
+      <div class="toolbar">
+        <input id="searchInput" class="search" type="search" placeholder="Try: tener, ticket, shy, pura vida, por vs para..." />
+        <select id="searchType" class="select" aria-label="Search type">
+          <option value="all">All sections</option>
+          <option value="verb">Verbs</option>
+          <option value="vocab">Vocabulary</option>
+          <option value="adjective">Adjectives</option>
+          <option value="adverb">Adverbs</option>
+          <option value="slang">Slang</option>
+          <option value="grammar">Grammar</option>
+        </select>
+      </div>
+      <div id="searchResults" class="results-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="grammar" class="content">
+      <div class="section-heading">
+        <div>
+          <h2>Grammar reference</h2>
+          <p>Click open the issue you need. The explanations are intentionally plain because grammar is already annoying enough when you are tired.</p>
+        </div>
+        <label class="depth-control">Study depth
+          <input id="depthSlider" type="range" min="1" max="3" value="3" />
+          <span id="depthLabel">Full</span>
+        </label>
+      </div>
+      <div id="grammarPanels" class="accordion-list"></div>
+    </section>
+
+    <section id="tenses" class="content cards-section">
+      <h2>Tense map</h2>
+      <p>Use this as the mental order. Get the first row strong, then add the second row, then treat subjunctive as its own project.</p>
+      <div class="tense-grid">
+        <article class="tense-card"><h3>Present</h3><p>What is true, habitual, or happening now. <strong>Hablo, como, vivo.</strong></p></article>
+        <article class="tense-card"><h3>Near future</h3><p>The practical future: <strong>voy a estudiar</strong>. Learn this early because people use it constantly.</p></article>
+        <article class="tense-card"><h3>Preterite</h3><p>Completed past action: <strong>ayer estudié</strong>, <strong>fui</strong>, <strong>terminé</strong>.</p></article>
+        <article class="tense-card"><h3>Imperfect</h3><p>Background or repeated past: <strong>era</strong>, <strong>tenía</strong>, <strong>estudiaba</strong>.</p></article>
+        <article class="tense-card"><h3>Future</h3><p>Prediction or formal future: <strong>hablaré</strong>, <strong>comerá</strong>, <strong>viviremos</strong>.</p></article>
+        <article class="tense-card"><h3>Conditional</h3><p>Would / polite softening: <strong>quería</strong> can be imperfect, but <strong>querría</strong> is would want.</p></article>
+        <article class="tense-card"><h3>Present perfect</h3><p>Have done: <strong>he estudiado</strong>, <strong>hemos visto</strong>.</p></article>
+        <article class="tense-card"><h3>Subjunctive</h3><p>After desire, doubt, need, emotion, uncertainty: <strong>quiero que vengas</strong>.</p></article>
+      </div>
+    </section>
+
+    <section id="words" class="content">
+      <h2>Vocabulary by topic</h2>
+      <p>These topic cards are text-first so the page stays fast, searchable, and easy to expand.</p>
+      <div id="topicButtons" class="chip-row"></div>
+      <div id="vocabGrid" class="vocab-grid"></div>
+    </section>
+
+    <section id="verbs" class="content">
+      <div class="section-heading">
+        <div>
+          <h2>Verb bank and conjugation tables</h2>
+          <p>Search a verb, click it, and the table updates. The table centers Latin American usage: yo, vos, tú, usted/él/ella, nosotros/as, ustedes/ellos/ellas.</p>
+        </div>
+        <a class="button small" href="#top">Back to top</a>
+      </div>
+      <div class="verb-layout">
+        <aside class="verb-list-panel">
+          <div class="toolbar compact">
+            <input id="verbSearch" class="search" type="search" placeholder="Search verbs..." />
+            <select id="verbCategory" class="select"><option value="all">All categories</option></select>
+          </div>
+          <div id="verbList" class="verb-list"></div>
+        </aside>
+        <article class="verb-detail" id="verbDetail">
+          <p class="muted">Choose a verb to see conjugations.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="adjectives" class="content">
+      <h2>Adjectives with examples</h2>
+      <p>Adjectives are not just vocabulary. They force agreement, placement, and ser/estar choices, so every card includes an example.</p>
+      <div class="toolbar compact">
+        <input id="adjectiveSearch" class="search" type="search" placeholder="Search adjectives..." />
+        <select id="adjectiveCategory" class="select"><option value="all">All adjective groups</option></select>
+      </div>
+      <div id="adjectiveGrid" class="word-grid"></div>
+    </section>
+
+    <section id="adverbs" class="content">
+      <h2>Adverbs and tiny words</h2>
+      <p>Small words do a lot of damage and a lot of good. These are worth drilling because they make your speech sound less robotic.</p>
+      <div id="adverbGrid" class="word-grid"></div>
+    </section>
+
+    <section id="slang" class="content">
+      <h2>Slang and Costa Rican notes</h2>
+      <p>Slang is powerful, but it is also social. Treat these like “recognize first, use carefully later,” especially with older people, strangers, bosses, or formal situations.</p>
+      <div id="slangGrid" class="word-grid slang-grid"></div>
+    </section>
+
+
+    <section id="readings" class="content">
+      <h2>Advanced reading stories with clickable word notes</h2>
+      <p>Open a story and click any word. A detailed mini-note appears with the English meaning, word type, root form, conjugation or grammar form, and a short human explanation. Clicking another word closes the old note and opens the new one. These stories are written to expose you to past tense, imperfect, conditional, subjunctive, connectors, emotional vocabulary, and more mature romantic language.</p>
+      <div id="storiesPanel" class="stories-panel"></div>
+    </section>
+
+    <section id="practice" class="content">
+      <h2>Practice prompts</h2>
+      <p>Do these when you do not know what to study. They force active output instead of just reading.</p>
+      <div id="practiceList" class="practice-list"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="fineprint">Built as a personal Spanish reference. Add more words inside <code>script.js</code> whenever you want the site to grow.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
