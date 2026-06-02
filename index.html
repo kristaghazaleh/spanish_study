@@ -10,6 +10,39 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* Added: Verb tense master tables */
+    .tense-master-section .tense-note,
+    .tense-master-section .note-line {
+      padding: 0 16px 12px;
+    }
+    .tense-master-section h3 {
+      padding: 12px 16px 0;
+      color: var(--blue);
+    }
+    .tense-master-section .table-scroll {
+      width: 100%;
+      overflow-x: auto;
+    }
+    .tense-master-section .master-table {
+      min-width: 760px;
+    }
+    .tense-master-section .master-table th,
+    .tense-master-section .master-table td {
+      vertical-align: top;
+      width: auto;
+    }
+    .tense-master-section .master-table td {
+      font-weight: 600;
+    }
+    .tense-master-section .master-table strong {
+      color: var(--purple);
+    }
+    .tense-master-links a {
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
   <header class="hero" id="top">
@@ -35,6 +68,7 @@
       <a href="#how-to-use">How to use</a>
       <a href="#grammar">Grammar</a>
       <a href="#tenses">Tenses</a>
+      <a href="#tense-master">Tense master</a>
       <a href="#words">Words</a>
       <a href="#verbs">Verbs</a>
       <a href="#adjectives">Adjectives</a>
@@ -49,6 +83,7 @@
     <a href="#top">Top</a>
     <a href="#global-search">Search</a>
     <a href="#grammar">Grammar</a>
+    <a href="#tense-master">Tense master</a>
     <a href="#verbs">Verb tables</a>
     <a href="#words">Topic words</a>
     <a href="#slang">Tico slang</a>
@@ -118,6 +153,364 @@
         <article class="tense-card"><h3>Subjunctive</h3><p>After desire, doubt, need, emotion, uncertainty: <strong>quiero que vengas</strong>.</p></article>
       </div>
     </section>
+
+
+    <section id="tense-master" class="content cards-section tense-master-section">
+      <div class="section-heading">
+        <div>
+          <h2>Verb tense master tables</h2>
+          <p>This section separates the six main one-word conjugation sets from helper-verb constructions. Use it as a quick map while reading real Spanish.</p>
+        </div>
+        <a class="button small" href="#tenses">Back to tense map</a>
+      </div>
+
+      <div class="example">
+        <p><strong>Big rule:</strong> simple tenses change the verb itself: <strong>estudio</strong>, <strong>estudié</strong>, <strong>estudiaba</strong>, <strong>estudiaré</strong>, <strong>estudiaría</strong>, <strong>estudie</strong>. Helper constructions use another verb: <strong>estoy estudiando</strong>, <strong>he estudiado</strong>, <strong>voy a estudiar</strong>.</p>
+      </div>
+
+      <div class="chip-row tense-master-links" aria-label="Tense master quick links">
+        <a class="chip" href="#tm-present">Present</a>
+        <a class="chip" href="#tm-preterite">Preterite</a>
+        <a class="chip" href="#tm-imperfect">Imperfect</a>
+        <a class="chip" href="#tm-future">Future</a>
+        <a class="chip" href="#tm-conditional">Conditional</a>
+        <a class="chip" href="#tm-subjunctive">Present subjunctive</a>
+        <a class="chip" href="#tm-irregulars">Irregulars</a>
+        <a class="chip" href="#tm-helpers">Helper constructions</a>
+      </div>
+
+      <details class="conj" open id="tm-present">
+        <summary>1. Present tense / presente — regular endings</summary>
+        <div class="tense-note">
+          <p><strong>Use:</strong> facts, habits, general present, and sometimes “am/is/are doing” depending on context.</p>
+          <p><strong>Examples:</strong> <em>Estudio español.</em> = I study Spanish / I am studying Spanish. <em>Como pasta.</em> = I eat pasta / I am eating pasta.</p>
+        </div>
+        <div class="table-scroll">
+          <table class="conj-table master-table">
+            <thead><tr><th>Subject</th><th>-AR: estudiar</th><th>-ER: comer</th><th>-IR: vivir</th></tr></thead>
+            <tbody>
+              <tr><th>yo</th><td><strong>-o</strong> → estudio</td><td><strong>-o</strong> → como</td><td><strong>-o</strong> → vivo</td></tr>
+              <tr><th>tú</th><td><strong>-as</strong> → estudias</td><td><strong>-es</strong> → comes</td><td><strong>-es</strong> → vives</td></tr>
+              <tr><th>él / ella / usted</th><td><strong>-a</strong> → estudia</td><td><strong>-e</strong> → come</td><td><strong>-e</strong> → vive</td></tr>
+              <tr><th>nosotros/as</th><td><strong>-amos</strong> → estudiamos</td><td><strong>-emos</strong> → comemos</td><td><strong>-imos</strong> → vivimos</td></tr>
+              <tr><th>ellos / ellas / ustedes</th><td><strong>-an</strong> → estudian</td><td><strong>-en</strong> → comen</td><td><strong>-en</strong> → viven</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+
+      <details class="conj" open id="tm-preterite">
+        <summary>2. Preterite / pretérito — completed past action</summary>
+        <div class="tense-note">
+          <p><strong>Use:</strong> completed past events: what happened, what you did, what finished.</p>
+          <p><strong>Examples:</strong> <em>Ayer estudié.</em> = Yesterday I studied. <em>Comí pasta.</em> = I ate pasta.</p>
+        </div>
+        <div class="table-scroll">
+          <table class="conj-table master-table">
+            <thead><tr><th>Subject</th><th>-AR: estudiar</th><th>-ER: comer</th><th>-IR: vivir</th></tr></thead>
+            <tbody>
+              <tr><th>yo</th><td><strong>-é</strong> → estudié</td><td><strong>-í</strong> → comí</td><td><strong>-í</strong> → viví</td></tr>
+              <tr><th>tú</th><td><strong>-aste</strong> → estudiaste</td><td><strong>-iste</strong> → comiste</td><td><strong>-iste</strong> → viviste</td></tr>
+              <tr><th>él / ella / usted</th><td><strong>-ó</strong> → estudió</td><td><strong>-ió</strong> → comió</td><td><strong>-ió</strong> → vivió</td></tr>
+              <tr><th>nosotros/as</th><td><strong>-amos</strong> → estudiamos</td><td><strong>-imos</strong> → comimos</td><td><strong>-imos</strong> → vivimos</td></tr>
+              <tr><th>ellos / ellas / ustedes</th><td><strong>-aron</strong> → estudiaron</td><td><strong>-ieron</strong> → comieron</td><td><strong>-ieron</strong> → vivieron</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note-line"><strong>Watch:</strong> regular -AR nosotros looks the same in present and preterite: <em>estudiamos</em> = we study / we studied. Context decides.</p>
+      </details>
+
+      <details class="conj" open id="tm-imperfect">
+        <summary>3. Imperfect / imperfecto — used to, was doing, background past</summary>
+        <div class="tense-note">
+          <p><strong>Use:</strong> repeated past habits, background descriptions, ongoing past actions, age/time/weather in the past.</p>
+          <p><strong>Examples:</strong> <em>Estudiaba mucho.</em> = I used to study a lot / I was studying a lot. <em>Vivía en California.</em> = I used to live in California / I was living in California.</p>
+        </div>
+        <div class="table-scroll">
+          <table class="conj-table master-table">
+            <thead><tr><th>Subject</th><th>-AR: estudiar</th><th>-ER: comer</th><th>-IR: vivir</th></tr></thead>
+            <tbody>
+              <tr><th>yo</th><td><strong>-aba</strong> → estudiaba</td><td><strong>-ía</strong> → comía</td><td><strong>-ía</strong> → vivía</td></tr>
+              <tr><th>tú</th><td><strong>-abas</strong> → estudiabas</td><td><strong>-ías</strong> → comías</td><td><strong>-ías</strong> → vivías</td></tr>
+              <tr><th>él / ella / usted</th><td><strong>-aba</strong> → estudiaba</td><td><strong>-ía</strong> → comía</td><td><strong>-ía</strong> → vivía</td></tr>
+              <tr><th>nosotros/as</th><td><strong>-ábamos</strong> → estudiábamos</td><td><strong>-íamos</strong> → comíamos</td><td><strong>-íamos</strong> → vivíamos</td></tr>
+              <tr><th>ellos / ellas / ustedes</th><td><strong>-aban</strong> → estudiaban</td><td><strong>-ían</strong> → comían</td><td><strong>-ían</strong> → vivían</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+
+      <details class="conj" open id="tm-future">
+        <summary>4. Future / futuro — will do</summary>
+        <div class="tense-note">
+          <p><strong>Use:</strong> future events, predictions, promises, and sometimes formal-sounding future statements.</p>
+          <p><strong>Build:</strong> keep the whole infinitive, then add the ending.</p>
+        </div>
+        <div class="table-scroll">
+          <table class="conj-table master-table">
+            <thead><tr><th>Subject</th><th>Ending</th><th>estudiar</th><th>comer</th><th>vivir</th></tr></thead>
+            <tbody>
+              <tr><th>yo</th><td><strong>-é</strong></td><td>estudiaré</td><td>comeré</td><td>viviré</td></tr>
+              <tr><th>tú</th><td><strong>-ás</strong></td><td>estudiarás</td><td>comerás</td><td>vivirás</td></tr>
+              <tr><th>él / ella / usted</th><td><strong>-á</strong></td><td>estudiará</td><td>comerá</td><td>vivirá</td></tr>
+              <tr><th>nosotros/as</th><td><strong>-emos</strong></td><td>estudiaremos</td><td>comeremos</td><td>viviremos</td></tr>
+              <tr><th>ellos / ellas / ustedes</th><td><strong>-án</strong></td><td>estudiarán</td><td>comerán</td><td>vivirán</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note-line"><strong>Everyday shortcut:</strong> people often use <em>voy a + infinitive</em>: <em>Voy a estudiar.</em> = I am going to study.</p>
+      </details>
+
+      <details class="conj" open id="tm-conditional">
+        <summary>5. Conditional / condicional — would do</summary>
+        <div class="tense-note">
+          <p><strong>Use:</strong> would do, polite softening, hypotheticals, wishes.</p>
+          <p><strong>Build:</strong> keep the whole infinitive, then add the ending.</p>
+        </div>
+        <div class="table-scroll">
+          <table class="conj-table master-table">
+            <thead><tr><th>Subject</th><th>Ending</th><th>estudiar</th><th>comer</th><th>vivir</th></tr></thead>
+            <tbody>
+              <tr><th>yo</th><td><strong>-ía</strong></td><td>estudiaría</td><td>comería</td><td>viviría</td></tr>
+              <tr><th>tú</th><td><strong>-ías</strong></td><td>estudiarías</td><td>comerías</td><td>vivirías</td></tr>
+              <tr><th>él / ella / usted</th><td><strong>-ía</strong></td><td>estudiaría</td><td>comería</td><td>viviría</td></tr>
+              <tr><th>nosotros/as</th><td><strong>-íamos</strong></td><td>estudiaríamos</td><td>comeríamos</td><td>viviríamos</td></tr>
+              <tr><th>ellos / ellas / ustedes</th><td><strong>-ían</strong></td><td>estudiarían</td><td>comerían</td><td>vivirían</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note-line"><strong>Useful phrase:</strong> <em>Me gustaría verte.</em> = I would like to see you. <em>Me encantaría verte.</em> = I would love to see you.</p>
+      </details>
+
+      <details class="conj" open id="tm-subjunctive">
+        <summary>6. Present subjunctive / presente de subjuntivo — wishes, doubt, emotion, uncertainty</summary>
+        <div class="tense-note">
+          <p><strong>Use:</strong> after triggers like <strong>quiero que</strong>, <strong>espero que</strong>, <strong>necesito que</strong>, <strong>me alegra que</strong>, <strong>tengo miedo de que</strong>, and some future/uncertain <strong>cuando</strong> clauses.</p>
+          <p><strong>Build:</strong> take the present <strong>yo</strong> form, drop <strong>-o</strong>, then use the opposite vowel endings.</p>
+        </div>
+        <div class="table-scroll">
+          <table class="conj-table master-table">
+            <thead><tr><th>Subject</th><th>-AR: estudiar</th><th>-ER: comer</th><th>-IR: vivir</th></tr></thead>
+            <tbody>
+              <tr><th>yo</th><td><strong>-e</strong> → estudie</td><td><strong>-a</strong> → coma</td><td><strong>-a</strong> → viva</td></tr>
+              <tr><th>tú</th><td><strong>-es</strong> → estudies</td><td><strong>-as</strong> → comas</td><td><strong>-as</strong> → vivas</td></tr>
+              <tr><th>él / ella / usted</th><td><strong>-e</strong> → estudie</td><td><strong>-a</strong> → coma</td><td><strong>-a</strong> → viva</td></tr>
+              <tr><th>nosotros/as</th><td><strong>-emos</strong> → estudiemos</td><td><strong>-amos</strong> → comamos</td><td><strong>-amos</strong> → vivamos</td></tr>
+              <tr><th>ellos / ellas / ustedes</th><td><strong>-en</strong> → estudien</td><td><strong>-an</strong> → coman</td><td><strong>-an</strong> → vivan</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note-line"><strong>Examples:</strong> <em>Quiero que estudies.</em> = I want you to study. <em>Espero que llegues pronto.</em> = I hope you arrive soon. <em>Cuando llegue, te llamo.</em> = When I arrive, I’ll call you.</p>
+      </details>
+
+      <details class="conj" open id="tm-helpers">
+        <summary>Helper-verb constructions — not separate one-word conjugation sets</summary>
+        <div class="table-scroll">
+          <table class="conj-table master-table">
+            <thead><tr><th>Construction</th><th>Formula</th><th>Example</th><th>Meaning</th></tr></thead>
+            <tbody>
+              <tr><th>Present progressive</th><td><strong>estar present + gerundio</strong></td><td>estoy estudiando</td><td>I am studying</td></tr>
+              <tr><th>Past progressive</th><td><strong>estar imperfect + gerundio</strong></td><td>estaba estudiando</td><td>I was studying</td></tr>
+              <tr><th>Present perfect</th><td><strong>haber present + participle</strong></td><td>he estudiado</td><td>I have studied</td></tr>
+              <tr><th>Past perfect</th><td><strong>haber imperfect + participle</strong></td><td>había estudiado</td><td>I had studied</td></tr>
+              <tr><th>Future perfect</th><td><strong>haber future + participle</strong></td><td>habré estudiado</td><td>I will have studied</td></tr>
+              <tr><th>Conditional perfect</th><td><strong>haber conditional + participle</strong></td><td>habría estudiado</td><td>I would have studied</td></tr>
+              <tr><th>Near future</th><td><strong>ir present + a + infinitive</strong></td><td>voy a estudiar</td><td>I am going to study</td></tr>
+              <tr><th>Obligation</th><td><strong>tener que + infinitive</strong></td><td>tengo que estudiar</td><td>I have to study</td></tr>
+              <tr><th>Ability</th><td><strong>poder + infinitive</strong></td><td>puedo estudiar</td><td>I can study</td></tr>
+              <tr><th>Wanting</th><td><strong>querer + infinitive</strong></td><td>quiero estudiar</td><td>I want to study</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note-line"><strong>Gerundio:</strong> -AR → <strong>-ando</strong>, -ER/-IR → <strong>-iendo</strong>. <strong>Past participle:</strong> -AR → <strong>-ado</strong>, -ER/-IR → <strong>-ido</strong>.</p>
+      </details>
+
+      <details class="conj" open id="tm-irregulars">
+        <summary>Present tense irregulars — high-frequency forms</summary>
+        <div class="tense-note">
+          <p>These are for <strong>simple present</strong>. They are the ones worth recognizing first because they show up constantly.</p>
+        </div>
+        <h3>Fully irregular / core verbs</h3>
+        <div class="table-scroll">
+          <table class="conj-table master-table">
+            <thead><tr><th>Verb</th><th>Meaning</th><th>yo</th><th>tú</th><th>él/ella/usted</th><th>nosotros/as</th><th>ellos/ustedes</th></tr></thead>
+            <tbody>
+              <tr><th>ser</th><td>to be, identity</td><td>soy</td><td>eres</td><td>es</td><td>somos</td><td>son</td></tr>
+              <tr><th>estar</th><td>to be, state/location</td><td>estoy</td><td>estás</td><td>está</td><td>estamos</td><td>están</td></tr>
+              <tr><th>ir</th><td>to go</td><td>voy</td><td>vas</td><td>va</td><td>vamos</td><td>van</td></tr>
+              <tr><th>haber</th><td>auxiliary have</td><td>he</td><td>has</td><td>ha</td><td>hemos</td><td>han</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Irregular yo forms</h3>
+        <div class="table-scroll">
+          <table class="conj-table master-table">
+            <thead><tr><th>Verb</th><th>Meaning</th><th>yo form</th><th>Rest of present pattern</th></tr></thead>
+            <tbody>
+              <tr><th>hacer</th><td>to do/make</td><td>hago</td><td>haces, hace, hacemos, hacen</td></tr>
+              <tr><th>poner</th><td>to put/place</td><td>pongo</td><td>pones, pone, ponemos, ponen</td></tr>
+              <tr><th>salir</th><td>to leave/go out</td><td>salgo</td><td>sales, sale, salimos, salen</td></tr>
+              <tr><th>traer</th><td>to bring</td><td>traigo</td><td>traes, trae, traemos, traen</td></tr>
+              <tr><th>conocer</th><td>to know/meet</td><td>conozco</td><td>conoces, conoce, conocemos, conocen</td></tr>
+              <tr><th>saber</th><td>to know facts/how</td><td>sé</td><td>sabes, sabe, sabemos, saben</td></tr>
+              <tr><th>dar</th><td>to give</td><td>doy</td><td>das, da, damos, dan</td></tr>
+              <tr><th>ver</th><td>to see</td><td>veo</td><td>ves, ve, vemos, ven</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Stem-changing present verbs</h3>
+        <div class="table-scroll">
+          <table class="conj-table master-table">
+            <thead><tr><th>Change</th><th>Verb</th><th>Meaning</th><th>Present forms</th></tr></thead>
+            <tbody>
+              <tr><th>e → ie</th><td>querer</td><td>to want/love</td><td>quiero, quieres, quiere, queremos, quieren</td></tr>
+              <tr><th>e → ie</th><td>pensar</td><td>to think</td><td>pienso, piensas, piensa, pensamos, piensan</td></tr>
+              <tr><th>e → ie</th><td>empezar</td><td>to start</td><td>empiezo, empiezas, empieza, empezamos, empiezan</td></tr>
+              <tr><th>e → ie</th><td>entender</td><td>to understand</td><td>entiendo, entiendes, entiende, entendemos, entienden</td></tr>
+              <tr><th>e → ie</th><td>perder</td><td>to lose</td><td>pierdo, pierdes, pierde, perdemos, pierden</td></tr>
+              <tr><th>o → ue</th><td>poder</td><td>can / to be able</td><td>puedo, puedes, puede, podemos, pueden</td></tr>
+              <tr><th>o → ue</th><td>volver</td><td>to return</td><td>vuelvo, vuelves, vuelve, volvemos, vuelven</td></tr>
+              <tr><th>o → ue</th><td>dormir</td><td>to sleep</td><td>duermo, duermes, duerme, dormimos, duermen</td></tr>
+              <tr><th>o → ue</th><td>recordar</td><td>to remember</td><td>recuerdo, recuerdas, recuerda, recordamos, recuerdan</td></tr>
+              <tr><th>e → i</th><td>pedir</td><td>to ask for/order</td><td>pido, pides, pide, pedimos, piden</td></tr>
+              <tr><th>e → i</th><td>servir</td><td>to serve</td><td>sirvo, sirves, sirve, servimos, sirven</td></tr>
+              <tr><th>e → i</th><td>repetir</td><td>to repeat</td><td>repito, repites, repite, repetimos, repiten</td></tr>
+              <tr><th>u → ue</th><td>jugar</td><td>to play games/sports</td><td>juego, juegas, juega, jugamos, juegan</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Mixed present irregulars</h3>
+        <div class="table-scroll">
+          <table class="conj-table master-table">
+            <thead><tr><th>Verb</th><th>Meaning</th><th>Present forms</th></tr></thead>
+            <tbody>
+              <tr><th>tener</th><td>to have</td><td>tengo, tienes, tiene, tenemos, tienen</td></tr>
+              <tr><th>venir</th><td>to come</td><td>vengo, vienes, viene, venimos, vienen</td></tr>
+              <tr><th>decir</th><td>to say/tell</td><td>digo, dices, dice, decimos, dicen</td></tr>
+              <tr><th>oír</th><td>to hear</td><td>oigo, oyes, oye, oímos, oyen</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+
+      <details class="conj">
+        <summary>Preterite irregulars — completed past forms to recognize</summary>
+        <div class="table-scroll">
+          <table class="conj-table master-table">
+            <thead><tr><th>Verb</th><th>Meaning</th><th>yo</th><th>tú</th><th>él/ella/usted</th><th>nosotros/as</th><th>ellos/ustedes</th></tr></thead>
+            <tbody>
+              <tr><th>hacer</th><td>to do/make</td><td>hice</td><td>hiciste</td><td>hizo</td><td>hicimos</td><td>hicieron</td></tr>
+              <tr><th>ir / ser</th><td>to go / to be</td><td>fui</td><td>fuiste</td><td>fue</td><td>fuimos</td><td>fueron</td></tr>
+              <tr><th>tener</th><td>to have</td><td>tuve</td><td>tuviste</td><td>tuvo</td><td>tuvimos</td><td>tuvieron</td></tr>
+              <tr><th>estar</th><td>to be</td><td>estuve</td><td>estuviste</td><td>estuvo</td><td>estuvimos</td><td>estuvieron</td></tr>
+              <tr><th>poder</th><td>could/managed to</td><td>pude</td><td>pudiste</td><td>pudo</td><td>pudimos</td><td>pudieron</td></tr>
+              <tr><th>poner</th><td>to put</td><td>puse</td><td>pusiste</td><td>puso</td><td>pusimos</td><td>pusieron</td></tr>
+              <tr><th>saber</th><td>found out</td><td>supe</td><td>supiste</td><td>supo</td><td>supimos</td><td>supieron</td></tr>
+              <tr><th>venir</th><td>to come</td><td>vine</td><td>viniste</td><td>vino</td><td>vinimos</td><td>vinieron</td></tr>
+              <tr><th>querer</th><td>wanted/tried</td><td>quise</td><td>quisiste</td><td>quiso</td><td>quisimos</td><td>quisieron</td></tr>
+              <tr><th>decir</th><td>to say/tell</td><td>dije</td><td>dijiste</td><td>dijo</td><td>dijimos</td><td>dijeron</td></tr>
+              <tr><th>traer</th><td>to bring</td><td>traje</td><td>trajiste</td><td>trajo</td><td>trajimos</td><td>trajeron</td></tr>
+              <tr><th>dar</th><td>to give</td><td>di</td><td>diste</td><td>dio</td><td>dimos</td><td>dieron</td></tr>
+              <tr><th>ver</th><td>to see</td><td>vi</td><td>viste</td><td>vio</td><td>vimos</td><td>vieron</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note-line"><strong>Spelling-change yo forms:</strong> llegar → <strong>llegué</strong>, buscar → <strong>busqué</strong>, pagar → <strong>pagué</strong>, empezar → <strong>empecé</strong>, tocar → <strong>toqué</strong>, cruzar → <strong>crucé</strong>. These preserve pronunciation.</p>
+        <p class="note-line"><strong>-IR stem changes in third person:</strong> dormir → <strong>durmió/durmieron</strong>, pedir → <strong>pidió/pidieron</strong>, sentir → <strong>sintió/sintieron</strong>.</p>
+      </details>
+
+      <details class="conj">
+        <summary>Imperfect irregulars — only three major ones</summary>
+        <div class="table-scroll">
+          <table class="conj-table master-table">
+            <thead><tr><th>Verb</th><th>Meaning</th><th>yo</th><th>tú</th><th>él/ella/usted</th><th>nosotros/as</th><th>ellos/ustedes</th></tr></thead>
+            <tbody>
+              <tr><th>ser</th><td>to be</td><td>era</td><td>eras</td><td>era</td><td>éramos</td><td>eran</td></tr>
+              <tr><th>ir</th><td>to go</td><td>iba</td><td>ibas</td><td>iba</td><td>íbamos</td><td>iban</td></tr>
+              <tr><th>ver</th><td>to see</td><td>veía</td><td>veías</td><td>veía</td><td>veíamos</td><td>veían</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+
+      <details class="conj">
+        <summary>Future and conditional irregular stems</summary>
+        <div class="tense-note">
+          <p>Future and conditional use the same irregular stems. Add future endings for “will” or conditional endings for “would.”</p>
+        </div>
+        <div class="table-scroll">
+          <table class="conj-table master-table">
+            <thead><tr><th>Infinitive</th><th>Meaning</th><th>Irregular stem</th><th>Future yo</th><th>Conditional yo</th></tr></thead>
+            <tbody>
+              <tr><th>decir</th><td>to say/tell</td><td>dir-</td><td>diré</td><td>diría</td></tr>
+              <tr><th>hacer</th><td>to do/make</td><td>har-</td><td>haré</td><td>haría</td></tr>
+              <tr><th>poder</th><td>can / to be able</td><td>podr-</td><td>podré</td><td>podría</td></tr>
+              <tr><th>poner</th><td>to put</td><td>pondr-</td><td>pondré</td><td>pondría</td></tr>
+              <tr><th>querer</th><td>to want/love</td><td>querr-</td><td>querré</td><td>querría</td></tr>
+              <tr><th>saber</th><td>to know</td><td>sabr-</td><td>sabré</td><td>sabría</td></tr>
+              <tr><th>salir</th><td>to leave/go out</td><td>saldr-</td><td>saldré</td><td>saldría</td></tr>
+              <tr><th>tener</th><td>to have</td><td>tendr-</td><td>tendré</td><td>tendría</td></tr>
+              <tr><th>venir</th><td>to come</td><td>vendr-</td><td>vendré</td><td>vendría</td></tr>
+              <tr><th>haber</th><td>auxiliary have</td><td>habr-</td><td>habré</td><td>habría</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+
+      <details class="conj">
+        <summary>Present subjunctive irregulars and spelling changes</summary>
+        <div class="table-scroll">
+          <table class="conj-table master-table">
+            <thead><tr><th>Verb</th><th>Meaning</th><th>yo</th><th>tú</th><th>él/ella/usted</th><th>nosotros/as</th><th>ellos/ustedes</th></tr></thead>
+            <tbody>
+              <tr><th>ser</th><td>to be</td><td>sea</td><td>seas</td><td>sea</td><td>seamos</td><td>sean</td></tr>
+              <tr><th>estar</th><td>to be</td><td>esté</td><td>estés</td><td>esté</td><td>estemos</td><td>estén</td></tr>
+              <tr><th>ir</th><td>to go</td><td>vaya</td><td>vayas</td><td>vaya</td><td>vayamos</td><td>vayan</td></tr>
+              <tr><th>haber</th><td>auxiliary have</td><td>haya</td><td>hayas</td><td>haya</td><td>hayamos</td><td>hayan</td></tr>
+              <tr><th>saber</th><td>to know</td><td>sepa</td><td>sepas</td><td>sepa</td><td>sepamos</td><td>sepan</td></tr>
+              <tr><th>dar</th><td>to give</td><td>dé</td><td>des</td><td>dé</td><td>demos</td><td>den</td></tr>
+              <tr><th>tener</th><td>to have</td><td>tenga</td><td>tengas</td><td>tenga</td><td>tengamos</td><td>tengan</td></tr>
+              <tr><th>venir</th><td>to come</td><td>venga</td><td>vengas</td><td>venga</td><td>vengamos</td><td>vengan</td></tr>
+              <tr><th>hacer</th><td>to do/make</td><td>haga</td><td>hagas</td><td>haga</td><td>hagamos</td><td>hagan</td></tr>
+              <tr><th>poner</th><td>to put</td><td>ponga</td><td>pongas</td><td>ponga</td><td>pongamos</td><td>pongan</td></tr>
+              <tr><th>salir</th><td>to leave/go out</td><td>salga</td><td>salgas</td><td>salga</td><td>salgamos</td><td>salgan</td></tr>
+              <tr><th>traer</th><td>to bring</td><td>traiga</td><td>traigas</td><td>traiga</td><td>traigamos</td><td>traigan</td></tr>
+              <tr><th>conocer</th><td>to know/meet</td><td>conozca</td><td>conozcas</td><td>conozca</td><td>conozcamos</td><td>conozcan</td></tr>
+              <tr><th>decir</th><td>to say/tell</td><td>diga</td><td>digas</td><td>diga</td><td>digamos</td><td>digan</td></tr>
+              <tr><th>ver</th><td>to see</td><td>vea</td><td>veas</td><td>vea</td><td>veamos</td><td>vean</td></tr>
+              <tr><th>oír</th><td>to hear</td><td>oiga</td><td>oigas</td><td>oiga</td><td>oigamos</td><td>oigan</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note-line"><strong>Sound-preserving spelling changes:</strong> buscar → <strong>busque</strong>, llegar → <strong>llegue</strong>, pagar → <strong>pague</strong>, empezar → <strong>empiece</strong>, tocar → <strong>toque</strong>.</p>
+      </details>
+
+      <details class="conj">
+        <summary>Irregular past participles — for haber + participle and adjective states</summary>
+        <div class="table-scroll">
+          <table class="conj-table master-table">
+            <thead><tr><th>Infinitive</th><th>Meaning</th><th>Past participle</th><th>Example</th></tr></thead>
+            <tbody>
+              <tr><th>decir</th><td>to say/tell</td><td>dicho</td><td>He dicho la verdad. = I have told the truth.</td></tr>
+              <tr><th>escribir</th><td>to write</td><td>escrito</td><td>He escrito una carta. = I have written a letter.</td></tr>
+              <tr><th>poner</th><td>to put</td><td>puesto</td><td>He puesto el libro aquí. = I have put the book here.</td></tr>
+              <tr><th>romper</th><td>to break</td><td>roto</td><td>Está roto. = It is broken.</td></tr>
+              <tr><th>abrir</th><td>to open</td><td>abierto</td><td>La puerta está abierta. = The door is open.</td></tr>
+              <tr><th>cubrir</th><td>to cover</td><td>cubierto</td><td>Está cubierto. = It is covered.</td></tr>
+              <tr><th>ver</th><td>to see</td><td>visto</td><td>He visto eso. = I have seen that.</td></tr>
+              <tr><th>volver</th><td>to return</td><td>vuelto</td><td>Ha vuelto. = He/she has returned.</td></tr>
+              <tr><th>hacer</th><td>to do/make</td><td>hecho</td><td>Lo he hecho. = I have done/made it.</td></tr>
+              <tr><th>morir</th><td>to die</td><td>muerto</td><td>Está muerto. = He/it is dead.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note-line"><strong>State pattern:</strong> <em>estar + participle/adjective</em> gives a current condition: <em>está roto</em>, <em>está abierto</em>, <em>está cerrado</em>.</p>
+      </details>
+    </section>
+
 
     <section id="words" class="content">
       <h2>Vocabulary by topic</h2>
